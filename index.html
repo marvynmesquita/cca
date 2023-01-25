@@ -6,27 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colonia Contra-Ataca</title>
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="./img/avatar.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
-    <header><img src="./img/logo.png" alt=""></header>
-    <canvas></canvas>
+    
     <section class="s-main">
-        <img src="./img/avatar.png" alt="Avatar" class="avatar">
-        <div class="lastvideo">
-            <p>
-                A Colonia é um canal dedicado a fazer video sobre jogos(muitas vezes de qualidade duvidosa). <br>
-                O canal é produzido em sua maioria por Wilson Rafael de Azevedo, conhecido como Sr. Wilson. <br>
-                A série principal do canal é o FFG(Freaking Fucking Games), onde há reviews de jogos mescaladas com atuação. <br>
-                Outra série é o FFPPTV(Freaking Fucking Pause para a TV), no qual são avaliados filmes ou séries, muitas vezes com tématica ou sobre jogos. <br>
-            </p>
-            <h2>Nosso ultimo vídeo: </h2>
-            <iframe
-            src="https://www.youtube.com/embed?listType=playlist&list=UUYvdGhl2G-M5ojWW1UzODJg">
-            </iframe>
+        <canvas id="canvas"></canvas>
+        <div class="maincontent">
+            <div class="left"  data-aos="zoom-in">
+                <img src="./img/logo.png" alt="">
+                <p>
+                    A Colonia Contra-Ataca é um canal com o foco principal em fazer reviews de jogos(muitas vezes de qualidade duvidosa). <br>
+                    Nosso quadro principal é FFG (Freaking Fucking Games) onde são feitas essas reviews com direito a cenas que se encaixam num enredo muito maior. <br>
+                    O quadro secundário do canal é o FFPPTV (Freaking Fucking Pause para a TV) onde analizamos filmes e séries sobre jogos ou com temática de jogos. <br>
+                </p>
+            </div>
+            <div class="right"   data-aos="zoom-in">
+                <h2>Nosso video mais recente: </h2>
+                <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUYvdGhl2G-M5ojWW1UzODJg">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <section class="s-chars" data-aos="fade-up">
+        <h2 class="us">Quem somos</h2>
+        <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/Wilson.webp" alt="">
+                        <span class="swiper-span">
+                            <p>
+                                <h2 class="h2-slide">Wilson Rafael de Azevedo</h2>
+                                Principal ator, editor e dono do canal.
+                            </p>
+                        </span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/fresh.webp" alt="">
+                        <span class="swiper-span">
+                            <p>
+                                <h2 class="h2-slide">Gabriel de Azevedo</h2>
+                                Irmão do Wilson, editor e responsável pelo quadro Fresh análise.
+                            </p>
+                        </span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/moria.jpg" alt="">
+                        <span class="swiper-span">
+                            <p>
+                                <h2 class="h2-slide">Moriá Velis</h2>
+                                Noiva do Wilson e faz algumas pontas.
+                            </p>
+                        </span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/rik.jpg" alt="">
+                        <span class="swiper-span">
+                            <p>
+                                <h2 class="h2-slide">Rik</h2>
+                                Amigo do Wilson e faz algumas pontas.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+          </div>
+    </section>
+    <section class="s-vlam" data-aos="fade-down">
+        <div class="right">
+            <span class="desc-vlam">
+                <h2 class="h2-vlam">Conheça a nossa HQ</h2>
+                Desistindo de sua vida anterior, Senhor Wilson se isola trabalhando como faxineiro de um navio, jogando videogames o tempo todo, e observando o tempo passar sem nenhum rumo. Entretanto, após a própria Morte questionando sua falta de ação sobre seu destino, as ansiedades dele acabam se manifestando na forma de uma alucinação semelhante a como ele era antigamente. E, junto a isso, outros fantasmas de seu passado começam a ressurgir, lentamente o levando a enfrentar uma verdade difícil de esquecer.
+                <div class="btns">
+                    <a href="https://tapas.io/series/vlam/" target="_blank" rel="noopener noreferrer" id="btn-tapas"><img src="./img/tapas-logo.png" alt=""></a>
+                    <a href="https://www.webtoons.com/en/challenge/vida-longa-ao-marinheiro/list?title_no=762336&webtoon-platform-redirect=true" target="_blank" rel="noopener noreferrer" id="btn-wbtoon"><img src="./img/webtoon-logo.png" alt=""></a>
+                    <a href="https://lojawarpzone.com.br/produto/vida-longa-ao-marinheiro-no-1/" target="_blank" rel="noopener noreferrer" id="btn-wz"><img src="./img/wz-logo.png" alt=""></a>
+                </div>
+            </span>
+        </div>
+    </section>
+    <section class="s-social"  data-aos="fade-up">
+        <h2 class="h2-social">Acompanhe a colonia:</h2>
+        <div class="social-media">
+            <a href="https://youtube.com/@coloniacontraataca" target="_blank" rel="noopener noreferrer">
+                <div class="btn-yt">
+                    <img src="./img/yt-pic.jpg" class="social-pic">
+                    <img src="./img/yt-logo.png" class="social-logo">
+                </div>
+            </a>
+            <a href="https://twitter.com/srwilsoncca" target="_blank" rel="noopener noreferrer">
+                <div class="btn-twitter">
+                    <img src="./img/twitter-pic.jpg" class="social-pic">
+                    <img src="./img/twitter-logo.png" class="social-logo">
+                </div>
+            </a>
+            <a href="https://twitch.tv/coloniacontraataca" target="_blank" rel="noopener noreferrer">
+                <div class="btn-twitch">
+                    <img src="./img/twitch-pic.jpg" class="social-pic">
+                    <img src="./img/twitch-logo.png" class="social-logo">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/srwilsoncca/" target="_blank" rel="noopener noreferrer">
+                <div class="btn-ig">
+                    <img src="./img/ig-pic.jpg" class="social-pic">
+                    <img src="./img/ig-logo.png" class="social-logo">
+                </div>
+            </a>
         </div>
     </section>
 
-    <script src="./js/bg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/scripts.js"></script>
+    <script src="./js/tv-static.js"></script>
 </body>
 </html>
